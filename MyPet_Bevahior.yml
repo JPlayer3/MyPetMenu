@@ -1,0 +1,150 @@
+menu_title: 'MyPet Bevahior Menu'
+open_command: MyPet Bevahior Menu
+size: 9
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.mypet.bevahior.permission
+      deny_commands:
+      - '[message] &cYou don''t have permission to do that!'
+items:
+  '1':
+    material: apple
+    slot: 1
+    priority: 1
+    display_name: 'Friendly'
+    lore:
+    - '&7Pet will not fight even'
+    left_click_commands:
+    - '[player] petbehavior Friendly'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '2':
+    material: pufferfish
+    slot: 2
+    priority: 1
+    display_name: 'Normal'
+    lore:
+    - '&7Pet will act like a normal wolf'
+    left_click_commands:
+    - '[player] petbehavior Duel'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '3':
+    material: bone
+    slot: 3
+    priority: 1
+    display_name: 'Raid'
+    lore:
+    - '&7Like normal but the pet will not attack'
+    - '&7Players and their minions (wolves, ocelot, pets)'
+    left_click_commands:
+    - '[player] petbehavior raid'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '5':
+    material: netherite_sword
+    slot: 5
+    priority: 1
+    display_name: 'Aggressive'
+    lore:
+    - '&7Pet attacks automatically everything within'
+    - '&715 blocks of the owner'
+    left_click_commands:
+    - '[player] petbehavior Aggressive'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '6':
+    material: golden_hoe
+    slot: 6
+    priority: 1
+    display_name: 'Farm'
+    lore:
+    - '&7Attacks automatically every Monster within'
+    - '&715 blocks of the owner'
+    left_click_commands:
+    - '[player] petbehavior farm'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '7':
+    material: iron_sword
+    slot: 7
+    priority: 1
+    display_name: 'Duel'
+    lore:
+    - '&7Pet will attack other pets with'
+    - '&7active duel behavior within a 5 block radius'
+    left_click_commands:
+    - '[player] petbehavior Duel'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  'Empty-0':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 0
+    priority: 3
+  'Empty-1':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 1
+    priority: 3
+  'Empty-2':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 2
+    priority: 3
+  'Empty-3':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 3
+    priority: 3
+  'Empty-4':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 4
+    priority: 3
+  'Empty-5':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 5
+    priority: 3
+  'Empty-6':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 6
+    priority: 3
+  'Empty-7':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 7
+    priority: 3
+  'Empty-8':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 8
+    priority: 3
