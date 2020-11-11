@@ -1,0 +1,590 @@
+menu_title: 'MyPetメニュー'
+open_command: MyPetメニュー
+size: 53
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.mypet.permission
+      deny_commands:
+      - '[message] &cMyPetメニューを開く権限がありません。'
+items:
+  '1':
+    material: chest
+    slot: 1
+    priority: 1
+    display_name: 'ペットのインベントリー'
+    lore:
+    - '&7ペットのインベントリーを開く'
+    left_click_commands:
+    - '[player] petinventory'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '2':
+    material: beacon
+    slot: 2
+    priority: 1
+    display_name: 'Pet Beacon'
+    lore:
+    - '&7Choose beacon effect for pet'
+    left_click_commands:
+    - '[player] petbeacon'
+    - '[close]'
+    right_click_commands:
+    - '[player] petbeacon stop'
+    - '[close]'
+  '3':
+    material: spruce_sapling
+    slot: 3
+    priority: 1
+    display_name: 'Choose Skill Tree'
+    lore:
+    - '&7Choose skill for pet'
+    left_click_commands:
+    - '[player] petchooseskilltree'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '6':
+    material: saddle
+    slot: 6
+    priority: 1
+    display_name: 'Call Pet'
+    lore:
+    - '&7Call a sent away pet to you'
+    left_click_commands:
+    - '[player] petcall'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '7':
+    material: lead
+    slot: 7
+    priority: 1
+    display_name: 'Send Pet Away'
+    lore:
+    - '&7Send away current pet'
+    left_click_commands:
+    - '[player] petsendaway'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '19':
+    material: red_bed
+    slot: 19
+    priority: 1
+    display_name: 'Store Pet'
+    lore:
+    - '&7Store current pet to pets storage'
+    left_click_commands:
+    - '[player] petstore'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '20':
+    material: bee_spawn_egg
+    slot: 20
+    priority: 1
+    display_name: 'Choose Pet'
+    lore:
+    - '&7Pick a pet from pets storage'
+    left_click_commands:
+    - '[player] petswitch'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '23':
+    material: item_frame
+    slot: 23
+    priority: 1
+    display_name: 'Toggle Healthbar'
+    lore:
+    - '&7Toggles actionbar Healthbar ON / OFF'
+    left_click_commands:
+    - '[player] petoption healthbar'
+    - '[close]'
+    right_click_commands:
+    - '[player] petoption healthbar'
+    - '[close]'
+  '24':
+    material: hopper
+    slot: 24
+    priority: 1
+    display_name: 'Toggle Pet Item Pickup'
+    lore:
+    - '&7Toggle pet picking up items'
+    left_click_commands:
+    - '[player] petpickup'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '25':
+    material: diamond_sword
+    slot: 25
+    priority: 1
+    display_name: 'Pet Behavior'
+    lore:
+    - '&7Choose a behavior for your pet'
+    left_click_commands:
+    - '[openguimenu] MyPet_Bevahior'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '37':
+    material: writable_book
+    slot: 37
+    priority: 1
+    display_name: 'Pet Info'
+    lore:
+    - '&7Display information about current pet'
+    left_click_commands:
+    - '[player] petinfo'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '38':
+    material: paper
+    slot: 38
+    priority: 1
+    display_name: 'Current Pet Skill Details'
+    lore:
+    - '&7Display current skill details about your pet'
+    left_click_commands:
+    - '[player] petskill'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '39':
+    material: chest_minecart
+    slot: 39
+    priority: 1
+    display_name: 'Pets Shop'
+    lore:
+    - '&7Buy new pet from the pets shop'
+    left_click_commands:
+    - '[player] petshop'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '41':
+    material: name_tag
+    slot: 41
+    priority: 1
+    display_name: 'Rename Pet'
+    lore:
+    - '&7Rename your pet'
+    left_click_commands:
+    - '[player] petname'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '42':
+    material: gold_nugget
+    slot: 42
+    priority: 1
+    display_name: 'Trade Pet With Someone'
+    lore:
+    - '&7Trade your pet with someone'
+    left_click_commands:
+    - '[player] pettrade'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '43':
+    material: tnt_minecart
+    slot: 43
+    priority: 1
+    display_name: 'Release Pet'
+    lore:
+    - '&7Release your pet so you don''t have a pet anymore'
+    left_click_commands:
+    - '[player] petrelease'
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  'Empty-0':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 0
+    priority: 3
+  'Empty-1':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 1
+    priority: 3
+  'Empty-2':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 2
+    priority: 3
+  'Empty-3':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 3
+    priority: 3
+  'Empty-4':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 4
+    priority: 3
+  'Empty-5':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 5
+    priority: 3
+  'Empty-6':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 6
+    priority: 3
+  'Empty-7':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 7
+    priority: 3
+  'Empty-8':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 8
+    priority: 3
+  'Empty-9':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 9
+    priority: 3
+  'Empty-10':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 10
+    priority: 3
+  'Empty-11':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 11
+    priority: 3
+  'Empty-12':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 12
+    priority: 3  
+  'Empty-13':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 13
+    priority: 3
+  'Empty-14':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 14
+    priority: 3
+  'Empty-15':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 15
+    priority: 3
+  'Empty-16':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 16
+    priority: 3
+  'Empty-17':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 17
+    priority: 3
+  'Empty-18':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 18
+    priority: 3
+  'Empty-19':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 19
+    priority: 3
+  'Empty-20':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 20
+    priority: 3
+  'Empty-20':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 20
+    priority: 3
+  'Empty-21':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 21
+    priority: 3
+  'Empty-22':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 22
+    priority: 3
+  'Empty-23':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 23
+    priority: 3
+  'Empty-24':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 24
+    priority: 3
+  'Empty-25':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 25
+    priority: 3
+  'Empty-26':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 26
+    priority: 3
+  'Empty-27':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 27
+    priority: 3
+  'Empty-28':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 28
+    priority: 3
+  'Empty-29':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 29
+    priority: 3
+  'Empty-30':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 30
+    priority: 3
+  'Empty-31':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 31
+    priority: 3
+  'Empty-32':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 32
+    priority: 3
+  'Empty-33':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 33
+    priority: 3
+  'Empty-34':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 34
+    priority: 3
+  'Empty-35':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 35
+    priority: 3
+  'Empty-36':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 36
+    priority: 3
+  'Empty-37':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 37
+    priority: 3
+  'Empty-38':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 38
+    priority: 3
+  'Empty-39':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 39
+    priority: 3
+  'Empty-40':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 40
+    priority: 3
+  'Empty-41':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 41
+    priority: 3
+  'Empty-42':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 42
+    priority: 3
+  'Empty-43':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 43
+    priority: 3
+  'Empty-44':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 44
+    priority: 3
+  'Empty-45':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 45
+    priority: 3
+  'Empty-46':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 46
+    priority: 3
+  'Empty-47':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 47
+    priority: 3
+  'Empty-48':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 48
+    priority: 3
+  'Empty-49':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 49
+    priority: 3
+  'Empty-50':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 50
+    priority: 3
+  'Empty-51':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 51
+    priority: 3
+  'Empty-52':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 52
+    priority: 3
+  'Empty-53':
+    material: black_stained_glass_pane
+    display_name: ' '
+    data: 0
+    amount: 1
+    slot: 53
+    priority: 3
